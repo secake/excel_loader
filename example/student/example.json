@@ -1,0 +1,36 @@
+{
+    "sheets": [
+        {
+            "sheet_name": "学生成绩表"
+        }
+    ],
+    "maps": {
+        "Student.name": {
+            "headers": [
+                "姓名",
+                "名字"
+            ],
+            "required": true,
+            "unique": true,
+            "conflict": "ignore"
+        },
+        "Student.age": {
+            "headers": [
+                "年龄",
+                "AGE",
+                "age",
+                "年纪"
+            ]
+        },
+        "Student.teacher": {"headers": ["老师","教师"]},
+        "Student.grade": {"headers": ["年级"]},
+        "Student.class_": {"headers": ["班级"]},
+        "Student.score": {"headers":[],
+            "values": {
+                "$f:(Score.score)": "$f:(Score.score)"
+            }
+        },
+        "Score.score": {"headers": ["总分"]},
+        "Score.commit": {"headers": ["备注"]}
+    }
+}
